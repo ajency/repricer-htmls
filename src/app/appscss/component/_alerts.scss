@@ -1,0 +1,14 @@
+.info-alert {
+	padding: 15px;
+	line-height: 1.4;
+	background: $alert-yellow;
+	border: 1px solid rgba(#000, 0.2);
+	@media screen and (max-width: 767px) {
+		.download-link {
+			display: block;
+			text-align: center;
+			padding: 8px;
+			margin-top: -13px;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+<ion-header>
+	<ion-navbar no-padding>
+		<ion-title> 
+			<div class="container">
+				<div class="header-main" padding-horizontal>
+					<!-- Main Nav tabs -->
+					<ul class="nav pri-menu pri-to-nav">
+						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>
+						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>
+						<li class="pri-menu__wrap hidden-xs-inline-block">
+							<ul class="pri-menu__full">
+								<li class="active"><a href="#">Summary</a></li>
+								<li><a href="#">Prices</a></li>
+								<li><a href="#">Competitors</a></li>
+								<li><a href="#">Analytics</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Pricing Rules</a></li>
+								<li><a href="#">Settings</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+	<div class="container">
+
+	<ion-grid no-padding>
+			<ion-row>
+				<ion-col col-md-8 col-12>
+					<ul class="pricer-info count list-inline">
+						<li class="count__single">
+							<a href="" class="count__link">
+								<span class="count__value">
+									<i class="count__cube"></i> 145
+								</span>
+								<span class="count__text left">Products on repricer</span>
+							</a>
+						</li>
+
+						<li class="count__single">
+							<span class="count__value">
+								100
+							</span>
+							<span class="count__text">Listings being tracked</span>
+						</li>
+
+						<li class="count__single">
+							<span class="count__value">
+								418
+							</span>
+							<span class="count__text">Competitions being tracked</span>
+						</li>
+					</ul>
+				</ion-col>
+				<ion-col col-md-4 col-12 class="col-lb">
+					<div class="readd">
+						<h5 class="readd__title">Add more produts to be repriced</h5>
+						<a href="#" class="flex readd__single">
+							<span class="readd__w"><img src="assets/img/import-bt.png" class="readd__img"></span>
+							<span class="readd__text">
+								<span class="readd__head fw600">Reprice produts from Browntape <i class="fa fa-angle-right pull-right"></i></span>
+								<span class="readd__desc">Add the products you have on Browntape to start tracking and repricing them</span>
+							</span>
+						</a>
+
+						<a href="#" class="flex readd__single">
+							<span class="readd__w"><img src="assets/img/import-csv.png" class="readd__img"></span>
+							<span class="readd__text">
+								<span class="readd__head fw600">Reprice produts from a CSV <i class="fa fa-angle-right pull-right"></i></span>
+								<span class="readd__desc">Download a sample CSV file for the format and upload it back with your data</span>
+							</span>
+						</a>
+
+						<a href="#" class="flex readd__single">
+							<span class="readd__w"><img src="assets/img/import-manual.png" class="readd__img"></span>
+							<span class="readd__text">
+								<span class="readd__head fw600">Add produts manually <i class="fa fa-angle-right pull-right"></i></span>
+								<span class="readd__desc">You can manually enter the details of the product to be repriced</span>
+							</span>
+						</a>
+
+					</div><!-- /add-products -->
+
+
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+
+	</div><!-- /.container -->
+</ion-content>

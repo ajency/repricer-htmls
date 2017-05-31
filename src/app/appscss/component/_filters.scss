@@ -1,0 +1,157 @@
+.filters {
+	padding: 15px 0;
+	align-items: flex-start;
+	&, .btn {
+		font-size: 13px;
+	}
+	&__wrap {
+		width: 100%;
+		.button {
+			text-transform: none;
+		}
+		.button-outline-md-dark {
+			border-color: $border-base;
+			border-radius: 3px;
+		}
+	}
+	&__search {
+		border: 1px solid $border-base;
+		border-radius: 3px;
+		margin: 0;
+		white-space: nowrap;
+		.btn-search {
+			padding: 8px;
+			background: lighten($border-base, 3%);
+			border: 0;
+			border-radius: 0;
+			// margin-right: -4px;
+			height: 34px;
+		}
+		.icon {
+			vertical-align: middle;
+			&:first-child {
+				margin-right: 5px;
+				font-size: 180%;
+			}
+			&:last-child {
+				margin-left: 5px;
+			}
+		}
+		.form-control {
+			border: 0;
+		}
+	}
+	&__toggle {
+		padding: 6px 12px;
+		width: 50px;
+	}
+	&__price {
+		padding: 15px;
+		width: 225px;
+	}
+	&__range {
+		margin-bottom: 18px;
+	}
+	&__input {
+		width: 75px;
+		margin: 0;
+		position: relative;
+		input {
+			box-shadow: none;
+			border-radius: 0;
+			border: 0;
+			border-bottom: 1px solid $border-base;
+			padding-left: 15px;
+			padding-right: 0;
+			height: auto;
+			&:active, &:focus {
+				box-shadow: none;
+			}
+		}
+		.display-label {
+			font-size: 11px;
+			font-weight: normal;
+			text-transform: uppercase;
+			opacity: 0.45;
+			margin: 0;
+			display: block;
+		}
+		.icon-label {
+			position: absolute;
+			left: 0;
+			bottom: 2px;
+			opacity: 0.45;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		padding: 0 15px;
+		margin-bottom: 15px;
+		background: #fff;
+		box-shadow: 0 0 8px rgba(0,0,0,0.1);
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&__search {
+			width: 86%;
+			border: 0;
+			border-radius: 0;
+			border-bottom: 1px solid $border-base;
+			.btn-search {
+				background: transparent;
+				height: 50px;
+			}
+			.form-control, .form-control:focus {
+				box-shadow: none;
+				height: 50px;
+			}
+		}
+		&__toggle {
+			padding: 14px 10px;
+		}
+		&__wrap {
+			flex-direction: column;
+			width: 100%;
+			.btn-group, .btn {
+				width: 100%;
+				display: block;
+				float: none;
+			}
+		}
+		&__wrap {
+			position: relative;
+			&:before {
+				content: 'Filter by';
+				padding: 10px 0 4px;
+				display: block;
+				font-weight: bold;
+				text-transform: uppercase;
+				opacity: .45;
+				font-size: 90%;
+			}
+		}
+		&__price {
+			width: 100%;
+		}
+		.btn-apply {
+			margin-bottom: 15px;
+			padding: 12px;
+		}
+		.btn-reset {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: auto;
+			padding: 7px 12px;
+		}
+	}
+}
+
+.plusicon:before {
+	content: '+';
+	font-size: 18px;
+	display: inline-block;
+	width: 24px;
+	text-align: center;
+}
+.open .plusicon:before {
+	content: '-';
+}

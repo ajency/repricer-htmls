@@ -1,0 +1,26 @@
+.btn.btn-primary {
+	background: $bt-green;
+	border-radius: 0;
+	border: 0;
+}
+
+.download-link {
+	.icon {
+		color: #000;
+		font-size: 11px;
+		width: 17px;
+		height: 17px;
+		line-height: 15px;
+		display: inline-block;
+		text-align: center;
+		opacity: 0.3;
+		border: 1px solid #000;
+		border-radius: 50%;
+		margin-right: 6px;
+	}
+	color: $bt-blue;
+	text-decoration: none;
+	span {
+		text-decoration: underline;
+	}
+}

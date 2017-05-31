@@ -1,0 +1,17 @@
+.item-md.item-block.item-label-stacked .item-inner {
+	border: 1px solid $border-base;
+	padding: 7px 8px;
+}
+.item-md.item-block.item-label-stacked + .item-md.item-block.item-label-stacked .item-inner {
+	border-top: 0;
+}
+.label-md[stacked] {
+	margin-top: 0;
+}
+.item-label-stacked .text-input-md {
+	margin: 0;
+	padding: 8px 0;
+}
+.item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+	color: #000;
+}

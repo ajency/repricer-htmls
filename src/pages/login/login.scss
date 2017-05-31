@@ -1,0 +1,35 @@
+// page-login {
+
+// }
+
+.pricer-wrap {
+	margin-top: 25px;
+	padding: 25px;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+.pricer-title {
+	margin-bottom: 0;
+}
+.pricer-sub {
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 25px;
+	opacity: 0.45;
+}
+.pricer-footer {
+	padding: 20px 25px;
+	margin: 10px -25px -25px;
+	background: $bt-grey;
+	border-top: 2px solid darken($bt-grey, 5%);
+}
+.list-md, ion-list, .list-ios {
+	margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+	ion-app.ios .container[padding-horizontal] {
+		padding: 0;
+	}
+}

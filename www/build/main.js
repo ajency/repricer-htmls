@@ -55784,7 +55784,7 @@ exports.isFunction = isFunction;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImportcsvPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55797,30 +55797,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the ImportcsvPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-var LoginPage = (function () {
-    function LoginPage(navCtrl, navParams) {
+var ImportcsvPage = (function () {
+    function ImportcsvPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    LoginPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad LoginPage');
+    ImportcsvPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ImportcsvPage');
     };
-    return LoginPage;
+    return ImportcsvPage;
 }());
-LoginPage = __decorate([
+ImportcsvPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="hidden">Login Page</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="background-bt-grey">\n\n<div class="container" padding-horizontal>\n	<div class="text-center">\n		<a href="#" class="bt-logo">\n			<img src="../assets/img/browntape_logo.png" alt="">\n		</a>\n	</div>\n	<ion-grid no-padding>\n	  <ion-row no-padding>\n	    <ion-col col-12 offset-0 col-lg-4 col-md-6 offset-lg-4 offset-md-3 no-padding>\n	      <div class="pricer-wrap">\n	      	<h1 class="pricer-title">Pricer</h1>\n	      	<h5 class="pricer-sub">Reprice your products on the go!</h5>\n\n	      	<ion-list>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Email</ion-label>\n	      			<ion-input type="email" placeholder="Enter your email"></ion-input>\n	      		</ion-item>\n	      		<br>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Password</ion-label>\n	      			<ion-input type="password" placeholder="Enter your password"></ion-input>\n	      		</ion-item>\n	      		<div padding-vertical>\n	      			<a href="#" class="forgot-pass">Forgot Password?</a>\n	      		</div>\n	      		<div class="error error--danger">\n	      			<strong>Hold it!</strong><br>Your email/password don\'t match...\n	      		</div>\n	      		<div padding-top class="pricer-footer">\n      				<button ion-button color="green" medium>Sign in</button>\n      			</div>\n	      	</ion-list>\n	      </div>\n	      <div class="text-center" padding-top>&copy; Browntape 2017</div>\n	    </ion-col>\n	  </ion-row>\n	</ion-grid>\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/,
+        selector: 'page-importcsv',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/importcsv/importcsv.html"*/'<!--\n  Generated template for the ImportcsvPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="hidden-xs">\n\n  <ion-navbar no-padding>\n		<ion-title> \n			<div class="container">\n				<div class="header-main" padding-horizontal>\n					<!-- Main Nav tabs -->\n					<ul class="nav pri-menu pri-to-nav">\n						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>\n						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>\n						<li class="pri-menu__wrap hidden-xs-inline-block">\n							<ul class="pri-menu__full">\n								<li class="active"><a href="#">Summary</a></li>\n								<li><a href="#">Prices</a></li>\n								<li><a href="#">Competitors</a></li>\n								<li><a href="#">Analytics</a></li>\n								<li><a href="#">Products</a></li>\n								<li><a href="#">Pricing Rules</a></li>\n								<li><a href="#">Settings</a></li>\n							</ul>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</ion-title>\n	</ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<div class="container" padding-horizontal>\n		<div class="header-secondary replace-header">\n			<ul class="nav pri-menu">\n				<li class="visible-xs pri-menu__hb"> <ion-icon name="ios-arrow-back"></ion-icon></li>\n				<li class="pri-menu__title"><h2>Import product details from a CSV</h2></li>\n				<!-- <li class="pri-menu__wrap hidden-xs-inline-block">\n					<ul class="pri-menu__full">\n						<li class="active"><a href="#">Summary</a></li>\n					</ul>\n				</li> -->\n			</ul>\n		</div>\n		<div class="inner-container">\n			<div class="info-alert">\n				<strong>Upload a list of ASINs/FSNs/SUPCs/ etc listing IDs</strong> in bulk which you want to track. You can <strong>even track listings which you don\'t actively sell</strong> yourself. You will need to map these to an SKU identifier which will be used to display the info here.\n				<br><br class="visible-xs"><hr class="visible-xs"><br>\n				<span class="hidden-xs"><strong>Download</strong> a template <ion-icon name="ios-arrow-forward" class="icon-small" margin-horizontal></ion-icon></span>\n				<a href="#" class="download-link"><ion-icon name="md-arrow-down"></ion-icon> <span class="text-underline">Download a Blank CSV Template</span></a>\n			</div>\n			<div class="drag-n-drop" margin-vertical>\n				<span class="hidden-xs"><strong>Drag n Drop template file here</strong> or <strong>Click to upload..</strong><br></span>\n				<span class="visible-xs"><strong>Upload CSV file...</strong><br></span>\n				You can also <strong>Add from Drive</strong> or <strong>Dropbox</strong>\n			</div>\n			<div class="prev-uploads">\n				<h4>Previous Uploads</h4>\n				<hr>\n				<div class="filters flex">\n					<div class="filters__search flex">\n							<button type="button" class="btn-search">\n								 <ion-icon name="ios-search"></ion-icon> Filename  <ion-icon name="ios-arrow-down"></ion-icon>\n							</button>\n						<input type="text" class="form-control" placeholder="Type to search" padding-left>\n					</div>\n					<!-- .... On click of this button  ... -->\n					<!-- .... toggle class "open" here ... -->\n					<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>\n					<!-- .... toggle this one -->\n					<div class="filters__wrap hidden">\n						<button ion-button color="dark" outline no-margin class="button-drop">\n							<span class="plusicon visible-xs-inline-block"></span> Uploaded by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="dark" outline no-margin class="button-drop">\n							<span class="plusicon visible-xs-inline-block"></span> Uploaded on <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="dark" outline no-margin class="button-drop">\n							<span class="plusicon visible-xs-inline-block"></span> Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="dark" outline no-margin class="button-drop">\n							<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="green" class="btn-apply" no-margin>Apply</button>\n						<button ion-button color="secondary" no-margin class="btn-reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>\n						<!-- <a href="#" class="btn btn-primary btn-apply">Apply</a>\n						<a href="#" class="btn btn-link btn-reset"><ion-icon name="ios-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></a> -->\n					</div>\n				</div>\n				<!-- 30 cols -->\n				<div class="tabular">\n					<div class="tabular__header hidden-xs flex">\n						<div class="tabular__cell cell-3">Upload ID</div>\n						<div class="tabular__cell cell-7">File Name</div>\n						<div class="tabular__cell cell-3"></div>\n						<div class="tabular__cell cell-5">Uploaded On</div>\n						<div class="tabular__cell cell-3">No. of Listings</div>\n						<div class="tabular__cell cell-5">Upload Details</div>\n						<div class="tabular__cell cell-4"></div>\n					</div>\n					<div class="tabular__row flex">\n						<div class="tabular__cell cell-3">123781623</div>\n						<div class="tabular__cell cell-7">\n							<span class="file-name"><strong>ListingsTracker_v1.csv</strong></span><br>\n							<small><span class="uploaded-by">Piyush Goel</span></small>\n						</div>\n						<div class="tabular__cell cell-3">\n							<ion-badge color="green">Processed</ion-badge>\n						</div>\n						<div class="tabular__cell cell-5">10 April 2017, 10:00 am</div>\n						<div class="tabular__cell cell-7 flex bunched">\n							<div class="tabular__cell cell-half cell-42"><strong>134</strong> <span class="visible-xs-inline-block">Listings</span></div>\n							<div class="tabular__cell cell-half cell-58"><span class="bold-xs">134</span> <span>rows imported</span></div>\n						</div>\n						<div class="tabular__cell cell-4" text-right>\n							<a href="#" padding-right>Download</a>\n							<a href="#">Result</a>\n						</div>\n					</div>\n				</div>\n\n			</div>\n		</div>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/importcsv/importcsv.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], LoginPage);
+], ImportcsvPage);
 
-//# sourceMappingURL=login.js.map
+//# sourceMappingURL=importcsv.js.map
 
 /***/ }),
 /* 99 */
@@ -74400,8 +74400,8 @@ webpackAsyncContext.id = 192;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_my_new_my_new__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_importcsv_importcsv__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_importcsv_importcsv__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(195);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74437,9 +74437,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/importcsv/importcsv.module#ImportcsvPageModule', name: 'ImportcsvPage', segment: 'importcsv', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/my-new/my-new.module#MyNewPageModule', name: 'MyNewPage', segment: 'my-new', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/importcsv/importcsv.module#ImportcsvPageModule', name: 'ImportcsvPage', segment: 'importcsv', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -74654,7 +74654,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImportcsvPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -74667,30 +74667,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the ImportcsvPage page.
+ * Generated class for the LoginPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-var ImportcsvPage = (function () {
-    function ImportcsvPage(navCtrl, navParams) {
+var LoginPage = (function () {
+    function LoginPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    ImportcsvPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ImportcsvPage');
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LoginPage');
     };
-    return ImportcsvPage;
+    return LoginPage;
 }());
-ImportcsvPage = __decorate([
+LoginPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-importcsv',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/importcsv/importcsv.html"*/'<!--\n  Generated template for the ImportcsvPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="hidden-xs">\n\n  <ion-navbar no-padding>\n		<ion-title> \n			<div class="container">\n				<div class="header-main" padding-horizontal>\n					<!-- Main Nav tabs -->\n					<ul class="nav pri-menu pri-to-nav">\n						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>\n						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>\n						<li class="pri-menu__wrap hidden-xs-inline-block">\n							<ul class="pri-menu__full">\n								<li class="active"><a href="#">Summary</a></li>\n								<li><a href="#">Prices</a></li>\n								<li><a href="#">Competitors</a></li>\n								<li><a href="#">Analytics</a></li>\n								<li><a href="#">Products</a></li>\n								<li><a href="#">Pricing Rules</a></li>\n								<li><a href="#">Settings</a></li>\n							</ul>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</ion-title>\n	</ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<div class="container" padding-horizontal>\n		<div class="header-secondary replace-header">\n			<ul class="nav pri-menu">\n				<li class="visible-xs pri-menu__hb"> <ion-icon name="ios-arrow-back"></ion-icon></li>\n				<li class="pri-menu__title"><h2>Import product details from a CSV</h2></li>\n				<!-- <li class="pri-menu__wrap hidden-xs-inline-block">\n					<ul class="pri-menu__full">\n						<li class="active"><a href="#">Summary</a></li>\n					</ul>\n				</li> -->\n			</ul>\n		</div>\n		<div class="inner-container">\n			<div class="info-alert">\n				<strong>Upload a list of ASINs/FSNs/SUPCs/ etc listing IDs</strong> in bulk which you want to track. You can <strong>even track listings which you don\'t actively sell</strong> yourself. You will need to map these to an SKU identifier which will be used to display the info here.\n				<br><br class="visible-xs"><hr class="visible-xs"><br>\n				<span class="hidden-xs"><strong>Download</strong> a template <ion-icon name="ios-arrow-forward" class="icon-small" margin-horizontal></ion-icon></span>\n				<a href="#" class="download-link"><ion-icon name="md-arrow-down"></ion-icon> <span class="text-underline">Download a Blank CSV Template</span></a>\n			</div>\n			<div class="drag-n-drop" margin-vertical>\n				<span class="hidden-xs"><strong>Drag n Drop template file here</strong> or <strong>Click to upload..</strong><br></span>\n				<span class="visible-xs"><strong>Upload CSV file...</strong><br></span>\n				You can also <strong>Add from Drive</strong> or <strong>Dropbox</strong>\n			</div>\n			<div class="prev-uploads">\n				<h4>Previous Uploads</h4>\n				<hr>\n				<div class="filters flex">\n					<div class="filters__search flex">\n							<button type="button" class="btn-search">\n								 <ion-icon name="ios-search"></ion-icon> Filename  <ion-icon name="ios-arrow-down"></ion-icon>\n							</button>\n						<input type="text" class="form-control" placeholder="Type to search" padding-left>\n					</div>\n					<!-- .... On click of this button... -->\n					<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>\n					<!-- .... toggle this one -->\n					<div class="filters__wrap hidden">\n						<button ion-button color="dark" outline no-margin>\n							<span class="plusicon visible-xs-inline-block"></span> Uploaded by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="dark" outline no-margin>\n							<span class="plusicon visible-xs-inline-block"></span> Uploaded on <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="dark" outline no-margin>\n							<span class="plusicon visible-xs-inline-block"></span> Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="dark" outline no-margin>\n							<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n						</button>\n						<button ion-button color="green" no-margin>Apply</button>\n						<button ion-button color="secondary" no-margin class="reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>\n						<!-- <a href="#" class="btn btn-primary btn-apply">Apply</a>\n						<a href="#" class="btn btn-link btn-reset"><ion-icon name="ios-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></a> -->\n					</div>\n				</div>\n				<!-- 30 cols -->\n				<div class="tabular">\n					<div class="tabular__header hidden-xs flex">\n						<div class="tabular__cell cell-3">Upload ID</div>\n						<div class="tabular__cell cell-7">File Name</div>\n						<div class="tabular__cell cell-3"></div>\n						<div class="tabular__cell cell-5">Uploaded On</div>\n						<div class="tabular__cell cell-3">No. of Listings</div>\n						<div class="tabular__cell cell-5">Upload Details</div>\n						<div class="tabular__cell cell-4"></div>\n					</div>\n					<div class="tabular__row flex">\n						<div class="tabular__cell cell-3">123781623</div>\n						<div class="tabular__cell cell-7">\n							<span class="file-name"><strong>ListingsTracker_v1.csv</strong></span><br>\n							<small><span class="uploaded-by">Piyush Goel</span></small>\n						</div>\n						<div class="tabular__cell cell-3">\n							<ion-badge color="green">Processed</ion-badge>\n						</div>\n						<div class="tabular__cell cell-5">10 April 2017, 10:00 am</div>\n						<div class="tabular__cell cell-7 flex bunched">\n							<div class="tabular__cell cell-half cell-42"><strong>134</strong> <span class="visible-xs-inline-block">Listings</span></div>\n							<div class="tabular__cell cell-half cell-58"><span class="bold-xs">134</span> <span>rows imported</span></div>\n						</div>\n						<div class="tabular__cell cell-4">\n							<a href="#" padding-right>Download</a>\n							<a href="#">Result</a>\n						</div>\n					</div>\n				</div>\n\n			</div>\n		</div>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/importcsv/importcsv.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="hidden">Login Page</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="background-bt-grey login-page">\n\n<div class="container" padding-horizontal>\n	<div class="text-center">\n		<a href="#" class="bt-logo">\n			<img src="../assets/img/browntape_logo.png" alt="">\n		</a>\n	</div>\n	<ion-grid no-padding>\n	  <ion-row no-padding>\n	    <ion-col col-12 offset-0 col-lg-4 col-md-6 offset-lg-4 offset-md-3 no-padding>\n	      <div class="pricer-wrap">\n	      	<h1 class="pricer-title">Pricer</h1>\n	      	<h5 class="pricer-sub">Reprice your products on the go!</h5>\n\n	      	<ion-list>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Email</ion-label>\n	      			<ion-input type="email" placeholder="Enter your email"></ion-input>\n	      		</ion-item>\n	      		<br>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Password</ion-label>\n	      			<ion-input type="password" placeholder="Enter your password"></ion-input>\n	      		</ion-item>\n	      		<div padding-vertical>\n	      			<a href="#" class="forgot-pass">Forgot Password?</a>\n	      		</div>\n	      		<div class="error error--danger">\n	      			<strong>Hold it!</strong><br>Your email/password don\'t match...\n	      		</div>\n	      		<div padding-top class="pricer-footer">\n      				<button ion-button color="green" medium>Sign in</button>\n      			</div>\n	      	</ion-list>\n	      </div>\n	      <div class="text-center" padding-top>&copy; Browntape 2017</div>\n	    </ion-col>\n	  </ion-row>\n	</ion-grid>\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], ImportcsvPage);
+], LoginPage);
 
-//# sourceMappingURL=importcsv.js.map
+//# sourceMappingURL=login.js.map
 
 /***/ }),
 /* 196 */
@@ -74746,7 +74746,7 @@ MyNewPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_importcsv_importcsv__ = __webpack_require__(98);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74764,11 +74764,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // change the url here to see that particular page (no extensions here, just the folder name and then the file name)
 // import { HomePage } from '../pages/home/home';
 // import { MyNewPage } from '../pages/my-new/my-new';
-// import { ImportcsvPage } from '../pages/importcsv/importcsv';
 
+// import { LoginPage } from '../pages/login/login';
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_importcsv_importcsv__["a" /* ImportcsvPage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.

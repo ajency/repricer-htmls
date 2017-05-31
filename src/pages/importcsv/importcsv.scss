@@ -1,4 +1,4 @@
-// page-importcsv {
+page-importcsv {
 	.tabular {
 		&__cell .cell-42 {
 			width: 42%;
@@ -11,9 +11,6 @@
 		.filters {
 			margin: 0 -16px;
 			margin-top: -8px;
-			&__toggle {
-				width: auto;
-			}
 		}
 		.tabular {
 			margin: 0 -16px;
@@ -76,4 +73,4 @@
 	small {
 		opacity: 0.6;
 	}
-// }
+}

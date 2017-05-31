@@ -69,24 +69,25 @@
 							</button>
 						<input type="text" class="form-control" placeholder="Type to search" padding-left>
 					</div>
-					<!-- .... On click of this button... -->
+					<!-- .... On click of this button  ... -->
+					<!-- .... toggle class "open" here ... -->
 					<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>
 					<!-- .... toggle this one -->
 					<div class="filters__wrap hidden">
-						<button ion-button color="dark" outline no-margin>
+						<button ion-button color="dark" outline no-margin class="button-drop">
 							<span class="plusicon visible-xs-inline-block"></span> Uploaded by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
 						</button>
-						<button ion-button color="dark" outline no-margin>
+						<button ion-button color="dark" outline no-margin class="button-drop">
 							<span class="plusicon visible-xs-inline-block"></span> Uploaded on <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
 						</button>
-						<button ion-button color="dark" outline no-margin>
+						<button ion-button color="dark" outline no-margin class="button-drop">
 							<span class="plusicon visible-xs-inline-block"></span> Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
 						</button>
-						<button ion-button color="dark" outline no-margin>
+						<button ion-button color="dark" outline no-margin class="button-drop">
 							<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
 						</button>
-						<button ion-button color="green" no-margin>Apply</button>
-						<button ion-button color="secondary" no-margin class="reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>
+						<button ion-button color="green" class="btn-apply" no-margin>Apply</button>
+						<button ion-button color="secondary" no-margin class="btn-reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>
 						<!-- <a href="#" class="btn btn-primary btn-apply">Apply</a>
 						<a href="#" class="btn btn-link btn-reset"><ion-icon name="ios-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></a> -->
 					</div>
@@ -116,7 +117,7 @@
 							<div class="tabular__cell cell-half cell-42"><strong>134</strong> <span class="visible-xs-inline-block">Listings</span></div>
 							<div class="tabular__cell cell-half cell-58"><span class="bold-xs">134</span> <span>rows imported</span></div>
 						</div>
-						<div class="tabular__cell cell-4">
+						<div class="tabular__cell cell-4" text-right>
 							<a href="#" padding-right>Download</a>
 							<a href="#">Result</a>
 						</div>

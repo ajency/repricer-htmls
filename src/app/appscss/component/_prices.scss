@@ -1,0 +1,31 @@
+.price {
+	display: inline-block;
+	padding-bottom: 3px;
+	margin: 0 3px;
+	.rupee {
+		opacity: 0.45;
+	}
+	.amount {
+		font-size: 16px;
+		font-weight: 500;
+		margin-left: 3px;
+	}
+	.badge {
+		margin-top: 3px;
+		font-size: 12px;
+		display: block;
+		height: 4px;
+
+		overflow: hidden;
+		line-height: 5;
+		padding: 0;
+	}
+}
+.open .price .badge {
+	height: auto;
+	padding: 3px 8px;
+	line-height: 1;
+}
+.bb {
+	vertical-align: top;
+}

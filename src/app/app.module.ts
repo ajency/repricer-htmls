@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { MyNewPage } from '../pages/my-new/my-new';
 import { ImportcsvPage } from '../pages/importcsv/importcsv';
 import { LoginPage } from '../pages/login/login';
+import { PricesPage } from '../pages/prices/prices';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     MyNewPage,
     ImportcsvPage,
-    LoginPage
+    LoginPage,
+    PricesPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     MyNewPage,
     ImportcsvPage,
-    LoginPage
+    LoginPage,
+    PricesPage
   ],
   providers: [
     StatusBar,

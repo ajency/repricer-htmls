@@ -14,6 +14,7 @@
 		}
 		.button {
 			text-transform: none;
+			font-size: 13px;
 		}
 		.button-outline-md-dark {
 			border-color: $border-base;
@@ -58,13 +59,13 @@
 			position: absolute;
 			left: 2px;
 			bottom: -17px;
-			border: 5px solid transparent;
+			border: 7px solid transparent;
 			border-bottom-color: #fff;
 			z-index:1;
 			transform: translateX(14px);
 		}
 		.filters__toggle.open:after {
-			border-width: 7px;
+			border-width: 9px;
 			border-bottom-color: #ebebeb;
 			z-index: 0;
 			left: 0;

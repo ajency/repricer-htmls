@@ -1,0 +1,10 @@
+page-prices {
+	@media screen and (max-width: 767px) {
+		.content-md {
+			background: $bt-grey;
+		}
+		.filters {
+			margin: 0 -15px;
+		}
+	}
+}

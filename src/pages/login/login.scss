@@ -34,12 +34,14 @@ page-login {
 	font-size: 14px;
 	font-weight: 500;
 }
-
-@media (max-width: 767px) {
-	ion-app.ios .container[padding-horizontal] {
-		padding: 0;
-	}
 }
 
-
+@media (max-width: 767px) {
+	ion-app .login-page .container[padding-horizontal] {
+		padding: 0;
+	}
+	ion-app.md .login-page .scroll-content,
+	ion-app .login-page .scroll-content {
+		padding: 0;
+	}
 }

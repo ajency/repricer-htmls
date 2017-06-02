@@ -35247,6 +35247,7 @@ a:hover {
 
 .pri-menu .pri-menu__logout {
   float: right;
+  font-size: 12px;
 }
 
 .pri-menu .pri-menu__logout a {
@@ -35661,7 +35662,6 @@ a:hover {
   .filters__wrap .button-drop {
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #eee;
     text-align: left;
     height: 45px;
     padding: 0;
@@ -35687,6 +35687,15 @@ a:hover {
     width: auto;
     padding: 7px 12px;
   }
+}
+
+.filters .item.item-md .checkbox-md {
+  margin-right: 12px;
+}
+
+.filters .item-md.item-block .item-inner {
+  border-bottom: 0;
+  font-size: 14px;
 }
 
 .plusicon:before {
@@ -35718,7 +35727,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .bt-dropdown__dd {
     width: 230px;
-    padding: 15px;
+    padding: 10px 0;
     position: absolute;
     top: 44px;
     left: 0;
@@ -35749,6 +35758,27 @@ a:hover {
     margin-left: -12px;
     z-index: 1;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .bt-dropdown {
+    border-bottom: 1px solid #eee;
+  }
+  .bt-dropdown.open {
+    padding-bottom: 15px;
+  }
+}
+
+.checkbox-md .checkbox-icon {
+  border-color: #e0e0e0;
+}
+
+.checkbox-md-green .checkbox-checked {
+  border-color: #309100;
+}
+
+.checkbox-md-dark .checkbox-checked {
+  border-color: #222;
 }
 
 .tabular .cell-1 {

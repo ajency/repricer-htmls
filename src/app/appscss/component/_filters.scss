@@ -166,7 +166,6 @@
 			.button-drop {
 				width: 100%;
 				border: 0;
-				border-bottom: 1px solid #eee;
 				text-align: left;
 				height: 45px;
 				padding: 0;
@@ -191,6 +190,15 @@
 			width: auto;
 			padding: 7px 12px;
 		}
+	}
+
+	.item.item-md .checkbox-md {
+		margin-right: 12px;
+	}
+	.item-md.item-block .item-inner {
+		border-bottom: 0;
+		font-size: 14px;
+		// opacity: 0.65;
 	}
 }
 
@@ -220,7 +228,7 @@
 	@media screen and (min-width: 768px) {
 		&__dd {
 			width: 230px;
-			padding: 15px;
+			padding: 10px 0;
 			position: absolute;
 			top: 44px;
 			left: 0;
@@ -252,4 +260,26 @@
 			}
 		}
 	}
+	@media screen and (max-width: 767px) {
+		border-bottom: 1px solid #eee;
+		&.open {
+			padding-bottom: 15px;
+		}
+	}
+}
+
+
+
+
+
+
+
+.checkbox-md .checkbox-icon {
+	border-color: $border-base;
+}
+.checkbox-md-green .checkbox-checked {
+	border-color: $bt-green;
+}
+.checkbox-md-dark .checkbox-checked {
+	border-color: #222;
 }

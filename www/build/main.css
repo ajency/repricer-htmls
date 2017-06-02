@@ -35463,18 +35463,6 @@ a:hover {
   font-size: 13px;
 }
 
-.filters__wrap {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .filters__wrap {
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px solid #ebebeb;
-  }
-}
-
 .filters__wrap .button {
   text-transform: none;
   font-size: 13px;
@@ -35483,6 +35471,11 @@ a:hover {
 .filters__wrap .button-outline-md-dark {
   border-color: #e0e0e0;
   border-radius: 3px;
+  padding: 0 8px;
+}
+
+.filters__wrap .button-outline-md-dark .icon-small {
+  margin-left: 8px;
 }
 
 .filters__search {
@@ -35523,7 +35516,13 @@ a:hover {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1170px) {
+  .filters__wrap {
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #ebebeb;
+  }
   .filters .filters__toggle.open:before, .filters .filters__toggle.open:after {
     content: '';
     position: absolute;
@@ -35991,10 +35990,8 @@ a:hover {
   vertical-align: top;
 }
 
-@media screen and (min-width: 768px) {
-  .pricer-count__legend {
-    display: none;
-  }
+.pricer-count__legend {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {

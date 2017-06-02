@@ -34,11 +34,9 @@
 .bb {
 	vertical-align: top;
 }
-@media screen and (min-width: 768px) {
-	.pricer-count {
-		&__legend {
-			display: none;
-		}
+.pricer-count {
+	&__legend {
+		display: none;
 	}
 }
 @media screen and (max-width: 767px) {

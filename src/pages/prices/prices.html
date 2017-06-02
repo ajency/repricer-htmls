@@ -61,28 +61,28 @@
 			<!-- .... On click of this button  ... -->
 			<!-- .... toggle class "open" here ... -->
 			<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>
-			<!-- .... toggle this one -->
-			<div class="filters__wrap hidden">
+			<!-- .... toggle class "hidden" for this one -->
+			<div class="filters__wrap">
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Pricing Outcome <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> Pricing Outcome <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Price Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> Price Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Sellers <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> Sellers <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> My Price <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> My Price <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Pricing Rule <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> Pricing Rule <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Last Repriced <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> Last Repriced <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>
+					<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>
 				<button ion-button color="green" class="btn-apply" no-margin>Apply</button>
 				<button ion-button color="secondary" no-margin class="btn-reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>
@@ -105,7 +105,7 @@
 			</div>
 			<!-- .... add class "violated" to this tabular__row if there's a violation here .... -->
 			<!-- .... add class "open" when tapped or clicked .... -->
-			<div class="tabular__row flex open">
+			<div class="tabular__row flex">
 				<div class="tabular__cell cell-1 hidden-xs">
 					<ion-item no-padding>
 						<ion-checkbox color="dark" no-padding></ion-checkbox>
@@ -144,49 +144,6 @@
 				<div class="tabular__cell cell-2 pricer-count">
 					<span class="seller-icon"><ion-icon name="md-person"></ion-icon></span> <strong class="big">5</strong>
 					<span class="pricer-count__legend">Sellers</span>
-				</div>
-				<div class="tabular__cell cell-5">
-					<!-- the svg -->
-				</div>
-			</div>
-			<!-- .... add class "violated" to this tabular__row if there's a violation here .... -->
-			<div class="tabular__row flex">
-				<div class="tabular__cell cell-1 hidden-xs">
-					<ion-item no-padding>
-						<ion-checkbox color="dark" no-padding></ion-checkbox>
-					</ion-item>
-				</div>
-				<div class="tabular__cell cell-9 flex">
-					<div class="img-wrap" margin-right>
-						<img src="../assets/img/iphone.png" width="65" alt="">
-					</div>
-					<div class="text-wrap">
-						<span class="sku">ABS15468PI4</span> <span class="marketplaces m-amazon"><span class="m-h"></span></span>
-						<h6 class="prod-title" no-margin>Product title goes here</h6>
-					</div>
-				</div>
-				<div class="tabular__cell cell-6">
-					<!-- .... show this span only if there's a violation .... -->
-					<!-- .... also add a class to the parent 'tabular__row' instructions at the div .... -->
-					<span class="violation-icon">
-						<img src="../assets/img/viol.png" alt="">
-					</span>
-					<span class="price">
-						<span class="rupee">&#8377;</span><span class="amount">4500</span>
-						<!-- .... if is lowest then color="success" else color="light" .... -->
-						<ion-badge color="success" text-uppercase>Lowest</ion-badge>
-					</span>
-					<!-- .... if has buybox then color="orange" else color="light" .... -->
-					<ion-badge class="bb" color="orange" text-uppercase>BB</ion-badge>
-				</div>
-				<div class="tabular__cell cell-5">
-					Algorithmic Rule
-				</div> <!--21-->
-				<div class="tabular__cell cell-2 pricer-count">
-					<span class="product-icon"></span> <strong>4</strong>
-				</div>
-				<div class="tabular__cell cell-2 pricer-count">
-					<span class="seller-icon"><ion-icon name="md-person"></ion-icon></span> <strong class="big">5</strong>
 				</div>
 				<div class="tabular__cell cell-5">
 					<!-- the svg -->

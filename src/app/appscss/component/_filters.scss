@@ -6,11 +6,11 @@
 		font-size: 13px;
 	}
 	&__wrap {
-		width: 100%;
+		// width: 100%;
 		@media (min-width: 768px) {
-			padding-top: 15px;
-			margin-top: 15px;
-			border-top: 1px solid #ebebeb;
+			// padding-top: 15px;
+			// margin-top: 15px;
+			// border-top: 1px solid #ebebeb;
 		}
 		.button {
 			text-transform: none;
@@ -19,6 +19,10 @@
 		.button-outline-md-dark {
 			border-color: $border-base;
 			border-radius: 3px;
+			padding: 0 8px;
+			.icon-small {
+				margin-left: 8px;
+			}
 		}
 	}
 	&__search {
@@ -53,7 +57,13 @@
 		width: 50px;
 		position: relative;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 768px) and (max-width: 1170px) {
+		&__wrap {
+			width: 100%;
+			padding-top: 15px;
+			margin-top: 15px;
+			border-top: 1px solid #ebebeb;
+		}
 		.filters__toggle.open:before, .filters__toggle.open:after {
 			content: '';
 			position: absolute;

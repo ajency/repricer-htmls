@@ -35126,8 +35126,15 @@ a:hover {
   border-bottom: 1px solid #e0e0e0;
 }
 
+.background-bt-grey {
+  background: #f6f5f0;
+}
+
 @media (max-width: 767px) {
   body {
+    background: #f6f5f0;
+  }
+  .background-bt-grey-xs {
     background: #f6f5f0;
   }
   .header-main,
@@ -35144,10 +35151,6 @@ a:hover {
   .inner-container {
     padding-top: 16px;
   }
-}
-
-.background-bt-grey {
-  background: #f6f5f0;
 }
 
 .toolbar-background {
@@ -35884,19 +35887,19 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .m-h {
+  .show-white .m-h {
     margin-top: 2px;
   }
-  .m-amazon .m-h {
+  .show-white .m-amazon .m-h {
     background-position: left 2px top -22px;
   }
-  .m-flipkart .m-h {
+  .show-white .m-flipkart .m-h {
     background-position: left -49px top -22px;
   }
-  .m-snapdeal .m-h {
+  .show-white .m-snapdeal .m-h {
     background-position: left -98px top -22px;
   }
-  .m-paytm .m-h {
+  .show-white .m-paytm .m-h {
     background-position: left -137px top -22px;
   }
 }
@@ -35965,6 +35968,28 @@ a:hover {
 
 .bb {
   vertical-align: top;
+}
+
+@media screen and (max-width: 767px) {
+  .bb {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .price .amount {
+    font-size: 20px;
+  }
+  .price .badge {
+    margin-top: 7px;
+  }
+  .violation-icon {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+  }
+  .pricer-count strong {
+    font-size: 20px;
+  }
 }
 
 .product-icon {
@@ -36256,5 +36281,43 @@ page-login .item-md .item-button {
   }
   page-prices .filters {
     margin: 0 -15px;
+    margin-bottom: 15px;
+  }
+  page-prices .tabular__row {
+    padding-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  page-prices .tabular__cell:nth-child(2) {
+    width: 100%;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  page-prices .tabular__cell:nth-child(3) {
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 65%;
+    text-align: right;
+    height: 42px;
+    padding-top: 8px;
+  }
+  page-prices .tabular__cell:nth-child(4), page-prices .tabular__cell:nth-child(7) {
+    display: none;
+  }
+  page-prices .tabular__cell:nth-child(5) {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 18%;
+    padding-top: 8px;
+  }
+  page-prices .tabular__cell:nth-child(6) {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 17%;
+    padding-top: 8px;
   }
 }

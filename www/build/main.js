@@ -6226,7 +6226,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(99)(module)
+        return __webpack_require__(98)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -6242,7 +6242,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(99)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(98)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -55779,12 +55779,25 @@ exports.isFunction = isFunction;
 
 /***/ }),
 /* 98 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 98;
+
+
+/***/ }),
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PricesPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55796,44 +55809,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the PricesPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var PricesPage = (function () {
-    function PricesPage(navCtrl, navParams) {
+var HomePage = (function () {
+    function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
     }
-    PricesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad PricesPage');
-    };
-    return PricesPage;
+    return HomePage;
 }());
-PricesPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-prices',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/prices/prices.html"*/'<!--\n  Generated template for the PricesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="hidden-xs">\n\n  <ion-navbar no-padding>\n		<ion-title> \n			<div class="container">\n				<div class="header-main" padding-horizontal>\n					<!-- Main Nav tabs -->\n					<ul class="nav pri-menu pri-to-nav">\n						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>\n						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>\n						<li class="pri-menu__wrap hidden-xs-inline-block">\n							<ul class="pri-menu__full">\n								<li><a href="#">Summary</a></li>\n								<li class="active"><a href="#">Prices</a></li>\n								<li><a href="#">Competitors</a></li>\n								<li><a href="#">Analytics</a></li>\n								<li><a href="#">Products</a></li>\n								<li><a href="#">Pricing Rules</a></li>\n								<li><a href="#">Settings</a></li>\n							</ul>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</ion-title>\n	</ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<div class="container" padding-horizontal>\n		<div class="header-secondary replace-header">\n			<ul class="nav pri-menu">\n				<li class="visible-xs pri-menu__hb"> <ion-icon name="ios-arrow-back"></ion-icon></li>\n				<!-- <li class="pri-menu__title"><h2>Import product details from a CSV</h2></li> -->\n				<li class="pri-menu__wrap marketplace-tabs">\n					<ul class="pri-menu__full">\n						<li class="active"><a href="#">All</a></li>\n						<li><a href="#" class="marketplaces m-amazon"><span class="m-h"></span></a></li>\n						<li><a href="#" class="marketplaces m-flipkart"><span class="m-h"></span></a></li>\n						<li><a href="#" class="marketplaces m-snapdeal"><span class="m-h"></span></a></li>\n						<li><a href="#" class="marketplaces m-paytm"><span class="m-h"></span></a></li>\n					</ul>\n				</li>\n			</ul>\n		</div>\n		<div class="filters flex">\n			<div class="filters__search flex">\n				<button type="button" class="btn-search">\n					<ion-icon name="ios-search"></ion-icon> SKU  <ion-icon name="ios-arrow-down"></ion-icon>\n				</button>\n				<input type="text" class="form-control" placeholder="Type to search" padding-left>\n			</div>\n			<!-- .... On click of this button  ... -->\n			<!-- .... toggle class "open" here ... -->\n			<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>\n			<!-- .... toggle this one -->\n			<div class="filters__wrap hidden">\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Pricing Outcome <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Price Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Sellers <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> My Price <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Pricing Rule <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Last Repriced <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="green" class="btn-apply" no-margin>Apply</button>\n				<button ion-button color="secondary" no-margin class="btn-reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>\n			</div>\n		</div>\n\n		<div class="tabular">\n			<div class="tabular__header flex hidden-xs">\n				<div class="tabular__cell cell-1">\n					<ion-item no-padding>\n						<ion-checkbox color="dark" no-padding></ion-checkbox>\n					</ion-item>\n				</div>\n				<div class="tabular__cell cell-8">Product</div>\n				<div class="tabular__cell cell-5">Price</div>\n				<div class="tabular__cell cell-5">Pricing Rule</div> <!--21-->\n				<div class="tabular__cell cell-3">Listings</div>\n				<div class="tabular__cell cell-3">Sellers</div>\n				<div class="tabular__cell cell-5">Price Battlefield</div>\n			</div>\n			<!-- .... add class "violated" to this tabular__row if there\'s a violation here .... -->\n			<div class="tabular__row flex">\n				<div class="tabular__cell cell-1 hidden-xs">\n					<ion-item no-padding>\n						<ion-checkbox color="dark" no-padding></ion-checkbox>\n					</ion-item>\n				</div>\n				<div class="tabular__cell cell-8 flex">\n					<div class="img-wrap" margin-right>\n						<img src="../assets/img/iphone.png" width="65" alt="">\n					</div>\n					<div class="text-wrap">\n						<span class="sku">ABS15468PI4</span> <span class="marketplaces m-amazon"><span class="m-h"></span></span>\n						<h6 class="prod-title" no-margin>Product title goes here</h6>\n					</div>\n				</div>\n				<div class="tabular__cell cell-5">\n					<!-- .... show this span only if there\'s a violation .... -->\n					<!-- .... also add a class to the parent \'tabular__row\' instructions at the div .... -->\n					<span class="violation-icon">\n						<img src="../assets/img/viol.png" alt="">\n					</span>\n					<span class="price">\n						<span class="rupee">&#8377;</span><span class="amount">4500</span>\n						<!-- .... if is lowest then color="success" else color="light" .... -->\n						<ion-badge color="success" text-uppercase>Lowest</ion-badge>\n					</span>\n					<!-- .... if has buybox then color="orange" else color="light" .... -->\n					<ion-badge class="bb" color="orange" text-uppercase>BB</ion-badge>\n				</div>\n				<div class="tabular__cell cell-5">\n					Algorithmic Rule\n				</div> <!--21-->\n				<div class="tabular__cell cell-3">\n					<span class="product-icon"></span> <strong>4</strong>\n				</div>\n				<div class="tabular__cell cell-3">\n					<span class="seller-icon"><ion-icon name="md-person"></ion-icon></span> <strong class="big">5</strong>\n				</div>\n				<div class="tabular__cell cell-5">\n					<!-- the svg -->\n				</div>\n			</div>\n		</div>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/prices/prices.html"*/,
+        selector: 'page-home',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/home/home.html"*/'<ion-header>\n	<ion-navbar no-padding>\n		<ion-title> \n			<div class="container">\n				<div class="header-main" padding-horizontal>\n					<!-- Main Nav tabs -->\n					<ul class="nav pri-menu pri-to-nav">\n						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>\n						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>\n						<li class="pri-menu__wrap hidden-xs-inline-block">\n							<ul class="pri-menu__full">\n								<li class="active"><a href="#">Summary</a></li>\n								<li><a href="#">Prices</a></li>\n								<li><a href="#">Competitors</a></li>\n								<li><a href="#">Analytics</a></li>\n								<li><a href="#">Products</a></li>\n								<li><a href="#">Pricing Rules</a></li>\n								<li><a href="#">Settings</a></li>\n							</ul>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n	<div class="container">\n\n	<ion-grid no-padding>\n			<ion-row>\n				<ion-col col-md-8 col-12>\n					<ul class="pricer-info count list-inline">\n						<li class="count__single">\n							<a href="" class="count__link">\n								<span class="count__value">\n									<i class="count__cube"></i> 145\n								</span>\n								<span class="count__text left">Products on repricer</span>\n							</a>\n						</li>\n\n						<li class="count__single">\n							<span class="count__value">\n								100\n							</span>\n							<span class="count__text">Listings being tracked</span>\n						</li>\n\n						<li class="count__single">\n							<span class="count__value">\n								418\n							</span>\n							<span class="count__text">Competitions being tracked</span>\n						</li>\n					</ul>\n				</ion-col>\n				<ion-col col-md-4 col-12 class="col-lb">\n					<div class="readd">\n						<h5 class="readd__title">Add more produts to be repriced</h5>\n						<a href="#" class="flex readd__single">\n							<span class="readd__w"><img src="assets/img/import-bt.png" class="readd__img"></span>\n							<span class="readd__text">\n								<span class="readd__head fw600">Reprice produts from Browntape <i class="fa fa-angle-right pull-right"></i></span>\n								<span class="readd__desc">Add the products you have on Browntape to start tracking and repricing them</span>\n							</span>\n						</a>\n\n						<a href="#" class="flex readd__single">\n							<span class="readd__w"><img src="assets/img/import-csv.png" class="readd__img"></span>\n							<span class="readd__text">\n								<span class="readd__head fw600">Reprice produts from a CSV <i class="fa fa-angle-right pull-right"></i></span>\n								<span class="readd__desc">Download a sample CSV file for the format and upload it back with your data</span>\n							</span>\n						</a>\n\n						<a href="#" class="flex readd__single">\n							<span class="readd__w"><img src="assets/img/import-manual.png" class="readd__img"></span>\n							<span class="readd__text">\n								<span class="readd__head fw600">Add produts manually <i class="fa fa-angle-right pull-right"></i></span>\n								<span class="readd__desc">You can manually enter the details of the product to be repriced</span>\n							</span>\n						</a>\n\n					</div><!-- /add-products -->\n\n\n				</ion-col>\n			</ion-row>\n		</ion-grid>\n\n	</div><!-- /.container -->\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-], PricesPage);
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+], HomePage);
 
-//# sourceMappingURL=prices.js.map
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 99;
-
+//# sourceMappingURL=home.js.map
 
 /***/ }),
 /* 100 */
@@ -74401,12 +74390,12 @@ webpackAsyncContext.id = 192;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_my_new_my_new__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_importcsv_importcsv__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_prices_prices__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_prices_prices__ = __webpack_require__(198);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74444,10 +74433,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/prices/prices.module#PricesPageModule', name: 'PricesPage', segment: 'prices', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/my-new/my-new.module#MyNewPageModule', name: 'MyNewPage', segment: 'my-new', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/importcsv/importcsv.module#ImportcsvPageModule', name: 'ImportcsvPage', segment: 'importcsv', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/prices/prices.module#PricesPageModule', name: 'PricesPage', segment: 'prices', priority: 'low', defaultHistory: [] }
                 ]
             })
         ],
@@ -74798,9 +74787,54 @@ MyNewPage = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PricesPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the PricesPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var PricesPage = (function () {
+    function PricesPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    PricesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PricesPage');
+    };
+    return PricesPage;
+}());
+PricesPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-prices',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/prices/prices.html"*/'<!--\n  Generated template for the PricesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="hidden-xs">\n\n  <ion-navbar no-padding>\n		<ion-title> \n			<div class="container">\n				<div class="header-main" padding-horizontal>\n					<!-- Main Nav tabs -->\n					<ul class="nav pri-menu pri-to-nav">\n						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>\n						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>\n						<li class="pri-menu__wrap hidden-xs-inline-block">\n							<ul class="pri-menu__full">\n								<li><a href="#">Summary</a></li>\n								<li class="active"><a href="#">Prices</a></li>\n								<li><a href="#">Competitors</a></li>\n								<li><a href="#">Analytics</a></li>\n								<li><a href="#">Products</a></li>\n								<li><a href="#">Pricing Rules</a></li>\n								<li><a href="#">Settings</a></li>\n							</ul>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</ion-title>\n	</ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="background-bt-grey-xs">\n	<div class="container" padding-horizontal>\n		<div class="header-secondary replace-header">\n			<ul class="nav pri-menu">\n				<li class="visible-xs pri-menu__hb"> <ion-icon name="ios-arrow-back"></ion-icon></li>\n				<!-- <li class="pri-menu__title"><h2>Import product details from a CSV</h2></li> -->\n				<li class="pri-menu__wrap marketplace-tabs show-white">\n					<ul class="pri-menu__full">\n						<li class="active"><a href="#">All</a></li>\n						<li><a href="#" class="marketplaces m-amazon"><span class="m-h"></span></a></li>\n						<li><a href="#" class="marketplaces m-flipkart"><span class="m-h"></span></a></li>\n						<li><a href="#" class="marketplaces m-snapdeal"><span class="m-h"></span></a></li>\n						<li><a href="#" class="marketplaces m-paytm"><span class="m-h"></span></a></li>\n					</ul>\n				</li>\n			</ul>\n		</div>\n		<div class="filters flex">\n			<div class="filters__search flex">\n				<button type="button" class="btn-search">\n					<ion-icon name="ios-search"></ion-icon> SKU  <ion-icon name="ios-arrow-down"></ion-icon>\n				</button>\n				<input type="text" class="form-control" placeholder="Type to search" padding-left>\n			</div>\n			<!-- .... On click of this button  ... -->\n			<!-- .... toggle class "open" here ... -->\n			<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>\n			<!-- .... toggle this one -->\n			<div class="filters__wrap hidden">\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Pricing Outcome <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Price Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Sellers <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> My Price <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Pricing Rule <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Last Repriced <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="dark" outline no-margin class="button-drop">\n					<span class="plusicon visible-xs-inline-block"></span> Sort by <ion-icon name="ios-arrow-down" class="hidden-xs icon-small" margin-left></ion-icon>\n				</button>\n				<button ion-button color="green" class="btn-apply" no-margin>Apply</button>\n				<button ion-button color="secondary" no-margin class="btn-reset" clear><ion-icon name="md-refresh" class="hidden-xs"></ion-icon><span class="visible-xs">Reset</span></button>\n			</div>\n		</div>\n\n		<div class="tabular">\n			<div class="tabular__header flex hidden-xs">\n				<div class="tabular__cell cell-1">\n					<ion-item no-padding>\n						<ion-checkbox color="dark" no-padding></ion-checkbox>\n					</ion-item>\n				</div>\n				<div class="tabular__cell cell-9">Product</div>\n				<div class="tabular__cell cell-6">Price</div>\n				<div class="tabular__cell cell-5">Pricing Rule</div> <!--21-->\n				<div class="tabular__cell cell-2">Listings</div>\n				<div class="tabular__cell cell-2">Sellers</div>\n				<div class="tabular__cell cell-5">Price Battlefield</div>\n			</div>\n			<!-- .... add class "violated" to this tabular__row if there\'s a violation here .... -->\n			<div class="tabular__row flex">\n				<div class="tabular__cell cell-1 hidden-xs">\n					<ion-item no-padding>\n						<ion-checkbox color="dark" no-padding></ion-checkbox>\n					</ion-item>\n				</div>\n				<div class="tabular__cell cell-9 flex">\n					<div class="img-wrap" margin-right>\n						<img src="../assets/img/iphone.png" width="65" alt="">\n					</div>\n					<div class="text-wrap">\n						<span class="sku">ABS15468PI4</span> <span class="marketplaces m-amazon"><span class="m-h"></span></span>\n						<h6 class="prod-title" no-margin>Product title goes here</h6>\n					</div>\n				</div>\n				<div class="tabular__cell cell-6">\n					<!-- .... show this span only if there\'s a violation .... -->\n					<!-- .... also add a class to the parent \'tabular__row\' instructions at the div .... -->\n					<span class="violation-icon">\n						<img src="../assets/img/viol.png" alt="">\n					</span>\n					<span class="price">\n						<span class="rupee">&#8377;</span><span class="amount">4500</span>\n						<!-- .... if is lowest then color="success" else color="light" .... -->\n						<ion-badge color="success" text-uppercase>Lowest</ion-badge>\n					</span>\n					<!-- .... if has buybox then color="orange" else color="light" .... -->\n					<ion-badge class="bb" color="orange" text-uppercase>BB</ion-badge>\n				</div>\n				<div class="tabular__cell cell-5">\n					Algorithmic Rule\n				</div> <!--21-->\n				<div class="tabular__cell cell-2 pricer-count">\n					<span class="product-icon"></span> <strong>4</strong>\n				</div>\n				<div class="tabular__cell cell-2 pricer-count">\n					<span class="seller-icon"><ion-icon name="md-person"></ion-icon></span> <strong class="big">5</strong>\n				</div>\n				<div class="tabular__cell cell-5">\n					<!-- the svg -->\n				</div>\n			</div>\n		</div>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/prices/prices.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+], PricesPage);
+
+//# sourceMappingURL=prices.js.map
+
+/***/ }),
+/* 199 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_prices_prices__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_prices_prices__ = __webpack_require__(198);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74836,44 +74870,11 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
 ], MyApp);
 
+var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-/* 199 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return HomePage;
-}());
-HomePage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/home/home.html"*/'<ion-header>\n	<ion-navbar no-padding>\n		<ion-title> \n			<div class="container">\n				<div class="header-main" padding-horizontal>\n					<!-- Main Nav tabs -->\n					<ul class="nav pri-menu pri-to-nav">\n						<li class="visible-xs pri-menu__hb"> <ion-icon name="menu"></ion-icon></li>\n						<li class="pri-menu__title hasub"><h1>Pricer</h1></li>\n						<li class="pri-menu__wrap hidden-xs-inline-block">\n							<ul class="pri-menu__full">\n								<li class="active"><a href="#">Summary</a></li>\n								<li><a href="#">Prices</a></li>\n								<li><a href="#">Competitors</a></li>\n								<li><a href="#">Analytics</a></li>\n								<li><a href="#">Products</a></li>\n								<li><a href="#">Pricing Rules</a></li>\n								<li><a href="#">Settings</a></li>\n							</ul>\n						</li>\n					</ul>\n				</div>\n			</div>\n		</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n	<div class="container">\n\n	<ion-grid no-padding>\n			<ion-row>\n				<ion-col col-md-8 col-12>\n					<ul class="pricer-info count list-inline">\n						<li class="count__single">\n							<a href="" class="count__link">\n								<span class="count__value">\n									<i class="count__cube"></i> 145\n								</span>\n								<span class="count__text left">Products on repricer</span>\n							</a>\n						</li>\n\n						<li class="count__single">\n							<span class="count__value">\n								100\n							</span>\n							<span class="count__text">Listings being tracked</span>\n						</li>\n\n						<li class="count__single">\n							<span class="count__value">\n								418\n							</span>\n							<span class="count__text">Competitions being tracked</span>\n						</li>\n					</ul>\n				</ion-col>\n				<ion-col col-md-4 col-12 class="col-lb">\n					<div class="readd">\n						<h5 class="readd__title">Add more produts to be repriced</h5>\n						<a href="#" class="flex readd__single">\n							<span class="readd__w"><img src="assets/img/import-bt.png" class="readd__img"></span>\n							<span class="readd__text">\n								<span class="readd__head fw600">Reprice produts from Browntape <i class="fa fa-angle-right pull-right"></i></span>\n								<span class="readd__desc">Add the products you have on Browntape to start tracking and repricing them</span>\n							</span>\n						</a>\n\n						<a href="#" class="flex readd__single">\n							<span class="readd__w"><img src="assets/img/import-csv.png" class="readd__img"></span>\n							<span class="readd__text">\n								<span class="readd__head fw600">Reprice produts from a CSV <i class="fa fa-angle-right pull-right"></i></span>\n								<span class="readd__desc">Download a sample CSV file for the format and upload it back with your data</span>\n							</span>\n						</a>\n\n						<a href="#" class="flex readd__single">\n							<span class="readd__w"><img src="assets/img/import-manual.png" class="readd__img"></span>\n							<span class="readd__text">\n								<span class="readd__head fw600">Add produts manually <i class="fa fa-angle-right pull-right"></i></span>\n								<span class="readd__desc">You can manually enter the details of the product to be repriced</span>\n							</span>\n						</a>\n\n					</div><!-- /add-products -->\n\n\n				</ion-col>\n			</ion-row>\n		</ion-grid>\n\n	</div><!-- /.container -->\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/home/home.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
-], HomePage);
-
-//# sourceMappingURL=home.js.map
 
 /***/ }),
 /* 200 */

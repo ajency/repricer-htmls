@@ -19,8 +19,15 @@ a {
 	border-bottom: 1px solid $border-base;
 }
 
+.background-bt-grey {
+	background: $bt-grey;
+}
+
 @media (max-width: 767px) {
 	body {
+		background: $bt-grey;
+	}
+	.background-bt-grey-xs {
 		background: $bt-grey;
 	}
 	.header-main,
@@ -37,10 +44,6 @@ a {
 	.inner-container {
 		padding-top: 16px;
 	}
-}
-
-.background-bt-grey {
-	background: $bt-grey;
 }
 
 

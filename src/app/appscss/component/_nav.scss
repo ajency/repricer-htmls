@@ -3,6 +3,11 @@
 	@media screen and (max-width: 767px) {
 		display: flex;
 	}
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 	&__title {
 		padding: 10px 0;
 		white-space: nowrap;
@@ -19,8 +24,8 @@
 		}
 		@media screen and (min-width: 768px) {
 			&.hasub:after {
-				content: '\f105';
-				font-family: 'FontAwesome';
+				content: '\f3d1';
+				font-family: 'Ionicons';
 				margin: 0 15px;
 				display: inline-block;
 				vertical-align: middle;
@@ -51,8 +56,8 @@
 		// 	font-size: 18px;
 		// 	font-weight: 500;
 		// 	&:after {
-		// 		content: "\f054";
-		// 		font-family: 'FontAwesome';
+		// 		content: '\f3d1';
+				// font-family: 'Ionicons';
 		// 		margin: 0 10px 0 15px;
 		// 		font-size: 8px;
 		// 	}
@@ -104,6 +109,13 @@
 	// 		background: #fff;
 	// 	}
 	// }
+
+	& &__logout {
+		float: right;
+		a {
+			opacity: 1;
+		}
+	}
 	@media (max-width: 767px) {
 		&__hb {
 			// padding: 19px 20px 11px;
@@ -116,6 +128,12 @@
 		li.active a {
 			color: #fff;
 			border-color: #fff;
+		}
+		&__title {
+			width: 100%;
+		}
+		& &__logout {
+			padding: 4px 0;
 		}
 	}
 }

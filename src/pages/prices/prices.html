@@ -25,6 +25,7 @@
 								<li><a href="#">Settings</a></li>
 							</ul>
 						</li>
+						<li class="pri-menu__logout"><a href="#">Logout</a></li>
 					</ul>
 				</div>
 			</div>
@@ -62,10 +63,17 @@
 			<!-- .... toggle class "open" here ... -->
 			<a href="#" class="filters__toggle"><img src="../assets/img/filter.png" alt=""></a>
 			<!-- .... toggle class "hidden" for this one -->
-			<div class="filters__wrap">
-				<button ion-button color="dark" outline no-margin class="button-drop">
-					<span class="plusicon visible-xs-inline-block"></span> Pricing Outcome <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
-				</button>
+			<div class="filters__wrap flex">
+				<div class="bt-dropdown">
+					<!-- .... On click of this button, add class "open" to the parent div "bt-dropdown" .... -->
+					<!-- .... just adding the class will show the dropdown .... -->
+					<button ion-button color="dark" outline no-margin class="bt-dropdown__btn button-drop">
+						<span class="plusicon visible-xs-inline-block"></span> Pricing Outcome <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
+					</button>
+					<div class="bt-dropdown__dd">
+						blah
+					</div>
+				</div>
 				<button ion-button color="dark" outline no-margin class="button-drop">
 					<span class="plusicon visible-xs-inline-block"></span> Price Status <ion-icon name="ios-arrow-down" class="hidden-xs icon-small"></ion-icon>
 				</button>

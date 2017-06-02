@@ -20,7 +20,7 @@ page-prices {
 			}
 			&__cell:nth-child(3) {
 				order: 5;
-				width: 65%;
+				width: 60%;
 				text-align: right;
 				height: 42px;
 				padding-top: 8px;
@@ -31,13 +31,24 @@ page-prices {
 			}
 			&__cell:nth-child(5) {
 				order: 2;
-				width: 18%;
+				width: 20%;
 				padding-top: 8px;
 			}
 			&__cell:nth-child(6) {
 				order: 3;
-				width: 17%;
+				width: 20%;
 				padding-top: 8px;
+			}
+		}
+		.tabular__row.open {
+			.tabular__cell:nth-child(7) {
+				display: block;
+				width: 100%;
+				text-align: center;
+				order: 5;
+			}
+			.tabular__cell:nth-child(3) {
+				height: auto;
 			}
 		}
 	}

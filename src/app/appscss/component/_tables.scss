@@ -53,6 +53,13 @@ $grid-cell-w: 100%/30;
 			background: rgba($alert-red, 0.05);
 		}
 	}
+	&__row.open {
+		z-index: 5;
+		box-shadow: 0 2px 15px rgba(0,0,0,0.05), 0 0 5px rgba(0,0,0,0.1);
+		&:hover {
+			background: #fff;
+		}
+	}
 	// .prod-img-c {
 	// 	overflow: hidden;
 	// }
@@ -132,6 +139,14 @@ $grid-cell-w: 100%/30;
 			box-shadow: 0 0 8px rgba(0,0,0,0.1);
 			margin-bottom: 15px;
 			flex-wrap: wrap;
+		}
+		&__row.open {
+			.pricer-count__legend {
+				display: block;
+				opacity: 0.45;
+				font-size: 12px;
+				margin-top: 4px;
+			}
 		}
 	}
 }

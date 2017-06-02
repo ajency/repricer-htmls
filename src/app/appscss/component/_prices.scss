@@ -21,6 +21,11 @@
 		padding: 0;
 	}
 }
+.violation-icon {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
 .open .price .badge {
 	height: auto;
 	padding: 3px 8px;
@@ -28,6 +33,13 @@
 }
 .bb {
 	vertical-align: top;
+}
+@media screen and (min-width: 768px) {
+	.pricer-count {
+		&__legend {
+			display: none;
+		}
+	}
 }
 @media screen and (max-width: 767px) {
 	.bb {
@@ -42,11 +54,6 @@
 		.badge {
 			margin-top: 7px;
 		}
-	}
-	.violation-icon {
-		display: inline-block;
-		font-size: 0;
-		vertical-align: top;
 	}
 	.pricer-count {
 		strong {

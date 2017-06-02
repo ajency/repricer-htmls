@@ -35418,7 +35418,7 @@ a:hover {
   padding: 20px;
 }
 
-.readd__single:hover {
+.readd__single, .readd__single:hover {
   text-decoration: none;
 }
 
@@ -35769,6 +35769,15 @@ a:hover {
   background: rgba(242, 87, 109, 0.05);
 }
 
+.tabular__row.open {
+  z-index: 5;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.tabular__row.open:hover {
+  background: #fff;
+}
+
 .tabular .prod-title {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -35847,6 +35856,12 @@ a:hover {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+  .tabular__row.open .pricer-count__legend {
+    display: block;
+    opacity: 0.45;
+    font-size: 12px;
+    margin-top: 4px;
   }
 }
 
@@ -35960,6 +35975,12 @@ a:hover {
   padding: 0;
 }
 
+.violation-icon {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+}
+
 .open .price .badge {
   height: auto;
   padding: 3px 8px;
@@ -35968,6 +35989,12 @@ a:hover {
 
 .bb {
   vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .pricer-count__legend {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -35981,11 +36008,6 @@ a:hover {
   }
   .price .badge {
     margin-top: 7px;
-  }
-  .violation-icon {
-    display: inline-block;
-    font-size: 0;
-    vertical-align: top;
   }
   .pricer-count strong {
     font-size: 20px;
@@ -36302,7 +36324,7 @@ page-login .item-md .item-button {
     -webkit-order: 5;
     -ms-flex-order: 5;
     order: 5;
-    width: 65%;
+    width: 60%;
     text-align: right;
     height: 42px;
     padding-top: 8px;
@@ -36314,14 +36336,25 @@ page-login .item-md .item-button {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
-    width: 18%;
+    width: 20%;
     padding-top: 8px;
   }
   page-prices .tabular__cell:nth-child(6) {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
-    width: 17%;
+    width: 20%;
     padding-top: 8px;
+  }
+  page-prices .tabular__row.open .tabular__cell:nth-child(7) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  page-prices .tabular__row.open .tabular__cell:nth-child(3) {
+    height: auto;
   }
 }

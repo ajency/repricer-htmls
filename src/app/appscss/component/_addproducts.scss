@@ -7,7 +7,7 @@
 	}
 	&__single {
 		padding: 20px;
-		&:hover {
+		&, &:hover {
 			text-decoration: none;
 		}
 		&:not(:last-child) {

@@ -35575,6 +35575,7 @@ a:hover {
   border: 0;
   border-radius: 0;
   height: 34px;
+  font-size: 11px;
 }
 
 .filters__search .icon {
@@ -35694,6 +35695,9 @@ a:hover {
     background: transparent;
     height: 50px;
   }
+  .filters__search .btn-search.button-md:hover:not(.disable-hover) {
+    background: transparent;
+  }
   .filters__search .form-control, .filters__search .form-control:focus {
     box-shadow: none;
     height: 50px;
@@ -35803,7 +35807,7 @@ a:hover {
     border-right-width: 10px;
     border-bottom-color: #fff;
     position: absolute;
-    left: 50%;
+    left: 25px;
     top: -12px;
     margin-left: -10px;
     z-index: 2;
@@ -35822,10 +35826,66 @@ a:hover {
 @media screen and (max-width: 767px) {
   .bt-dropdown {
     border-bottom: 1px solid #eee;
+    width: 100%;
   }
   .bt-dropdown.open {
     padding-bottom: 15px;
   }
+}
+
+.filters__search .bt-dropdown {
+  z-index: 11;
+  width: auto;
+  padding-bottom: 0;
+}
+
+.filters__search .bt-dropdown__dd {
+  width: 230px;
+  padding: 10px 0;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters__search .bt-dropdown__dd:before, .filters__search .bt-dropdown__dd:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-bottom-color: #fff;
+  position: absolute;
+  left: 25px;
+  top: -12px;
+  margin-left: -10px;
+  z-index: 2;
+}
+
+.filters__search .bt-dropdown__dd:after {
+  border-bottom-color: #e0e0e0;
+  border-width: 8px;
+  border-left-width: 12px;
+  border-right-width: 12px;
+  top: -16px;
+  margin-left: -12px;
+  z-index: 1;
+}
+
+.filters__search .bt-dropdown__dd .button {
+  font-size: 14px;
+  height: 45px;
+}
+
+.filters__search .bt-dropdown__dd .button-inner {
+  text-transform: none;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 15px;
 }
 
 .checkbox-md .checkbox-icon {

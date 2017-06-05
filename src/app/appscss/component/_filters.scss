@@ -38,6 +38,7 @@
 			border-radius: 0;
 			// margin-right: -4px;
 			height: 34px;
+			font-size: 11px;
 		}
 		.icon {
 			vertical-align: middle;
@@ -135,6 +136,9 @@
 			.btn-search {
 				background: transparent;
 				height: 50px;
+				&.button-md:hover:not(.disable-hover) {
+					background: transparent;
+				}
 			}
 			.form-control, .form-control:focus {
 				box-shadow: none;
@@ -244,7 +248,7 @@
 				border-right-width: 10px;
 				border-bottom-color: #fff;
 				position: absolute;
-				left: 50%;
+				left: 25px;
 				top: -12px;
 				margin-left: -10px;
 				z-index: 2;
@@ -262,8 +266,57 @@
 	}
 	@media screen and (max-width: 767px) {
 		border-bottom: 1px solid #eee;
+		width: 100%;
 		&.open {
 			padding-bottom: 15px;
+		}
+	}
+	.filters__search & {
+		z-index: 11;
+		width: auto;
+		padding-bottom: 0;
+		&__dd {
+			width: 230px;
+			padding: 10px 0;
+			position: absolute;
+			top: 44px;
+			left: 0;
+			border: 1px solid $border-base;
+			background: #fff;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			&:before, &:after {
+				content: '';
+				width: 0;
+				height: 0;
+				border: 6px solid transparent;
+				border-left-width: 10px;
+				border-right-width: 10px;
+				border-bottom-color: #fff;
+				position: absolute;
+				left: 25px;
+				top: -12px;
+				margin-left: -10px;
+				z-index: 2;
+			}
+			&:after {
+				border-bottom-color: $border-base;
+				border-width: 8px;
+				border-left-width: 12px;
+				border-right-width: 12px;
+				top: -16px;
+				margin-left: -12px;
+				z-index: 1;
+			}
+			.button {
+				font-size: 14px;
+				height: 45px;
+			}
+			.button-inner {
+				// text-align: left;
+				text-transform: none;
+				justify-content: flex-start;
+				padding-left: 15px;
+			}
 		}
 	}
 }

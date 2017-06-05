@@ -74739,7 +74739,7 @@ var LoginPage = (function () {
 LoginPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="hidden">Login Page</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="background-bt-grey login-page">\n\n<div class="container" padding-horizontal>\n	<div class="text-center">\n		<a href="#" class="bt-logo">\n			<img src="../assets/img/browntape_logo.png" alt="">\n		</a>\n	</div>\n	<ion-grid no-padding>\n	  <ion-row no-padding>\n	    <ion-col col-12 offset-0 col-lg-4 col-md-6 offset-lg-4 offset-md-3 no-padding>\n	      <div class="pricer-wrap">\n	      	<h1 class="pricer-title">Pricer</h1>\n	      	<h5 class="pricer-sub">Reprice your products on the go!</h5>\n\n	      	<ion-list>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Email</ion-label>\n	      			<ion-input type="email" placeholder="Enter your email"></ion-input>\n	      		</ion-item>\n	      		<br>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Password</ion-label>\n	      			<ion-input type="password" placeholder="Enter your password"></ion-input>\n	      		</ion-item>\n	      		<div padding-vertical>\n	      			<a href="#" class="forgot-pass">Forgot Password?</a>\n	      		</div>\n	      		<div class="error error--danger">\n	      			<strong>Hold it!</strong><br>Your email/password don\'t match...\n	      		</div>\n	      		<div padding-top class="pricer-footer">\n      				<button ion-button color="green" medium>Sign in</button>\n      			</div>\n	      	</ion-list>\n	      </div>\n	      <div class="text-center" padding-top>&copy; Browntape 2017</div>\n	    </ion-col>\n	  </ion-row>\n	</ion-grid>\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title class="hidden">Login Page</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="background-bt-grey login-page">\n\n<div class="container" padding-horizontal>\n	<div class="text-center">\n		<a href="#" class="bt-logo">\n			<img src="../assets/img/browntape_logo.png" alt="">\n		</a>\n	</div>\n	<ion-grid no-padding>\n	  <ion-row no-padding>\n	    <ion-col col-12 offset-0 col-lg-4 col-md-6 offset-lg-4 offset-md-3 no-padding>\n	      <div class="pricer-wrap">\n	      	<h1 class="pricer-title">Pricer</h1>\n	      	<h5 class="pricer-sub">Reprice your products on the go!</h5>\n\n	      	<ion-list>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Email</ion-label>\n	      			<ion-input type="email" placeholder="Enter your email"></ion-input>\n	      		</ion-item>\n	      		<br>\n	      		<ion-item no-padding>\n	      			<ion-label stacked>Password</ion-label>\n	      			<ion-input type="password" placeholder="Enter your password"></ion-input>\n	      		</ion-item>\n	      		<div padding-vertical>\n	      			<a href="#" class="forgot-pass">Forgot Password?</a>\n	      		</div>\n	      		<div class="error error--danger">\n	      			<strong>Hold it!</strong><br>Your email/password don\'t match...\n	      		</div>\n	      		<div padding-top class="pricer-footer">\n	      			<ion-item no-padding float-left class="inline-items">\n	      				<ion-label no-padding>Remember me</ion-label>\n	      				<ion-checkbox no-padding color="green"></ion-checkbox>\n	      			</ion-item>\n      				<button ion-button color="green" medium float-right class="loading">Sign in</button>\n      			</div>\n	      	</ion-list>\n	      </div>\n	      <div class="text-center" padding-top>&copy; Browntape 2017</div>\n	    </ion-col>\n	  </ion-row>\n	</ion-grid>\n</div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/pages/login/login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], LoginPage);
@@ -74800,7 +74800,7 @@ MyNewPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_prices_prices__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(196);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74819,11 +74819,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // import { HomePage } from '../pages/home/home';
 // import { MyNewPage } from '../pages/my-new/my-new';
 // import { ImportcsvPage } from '../pages/importcsv/importcsv';
-// import { LoginPage } from '../pages/login/login';
 
+// import { PricesPage } from '../pages/prices/prices';
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_prices_prices__["a" /* PricesPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -74836,9 +74836,10 @@ var MyApp = (function () {
 MyApp = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/ajency/Documents/Renuka/browntape/repricer-git/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
 ], MyApp);
 
+var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),

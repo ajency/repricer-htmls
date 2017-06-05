@@ -21,6 +21,21 @@ page-login {
 	margin: 10px -25px -25px;
 	background: $bt-grey;
 	border-top: 2px solid darken($bt-grey, 5%);
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.item-block {
+		background: transparent;
+		.checkbox-md {
+			margin-right: 8px;
+			margin-left: 0;
+		}
+		.item-inner {
+			border: 0;
+		}
+	}
 }
 .list-md, ion-list, .list-ios {
 	margin-bottom: 0;

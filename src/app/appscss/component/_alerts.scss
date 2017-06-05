@@ -2,7 +2,7 @@
 	padding: 15px;
 	line-height: 1.4;
 	background: $alert-yellow;
-	border: 1px solid rgba(#000, 0.2);
+	border: 1px solid rgba(#000, 0.1);
 	@media screen and (max-width: 767px) {
 		.download-link {
 			display: block;
@@ -11,4 +11,9 @@
 			margin-top: -13px;
 		}
 	}
+}
+
+// no border top if this is first-child of inner-container
+.inner-container .info-alert:first-child {
+	border-top: 0;
 }

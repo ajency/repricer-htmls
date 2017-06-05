@@ -35130,6 +35130,15 @@ a:hover {
   background: #f6f5f0;
 }
 
+@media (min-width: 768px) {
+  .header-main {
+    margin-top: 25px;
+  }
+  .header-secondary {
+    padding: 15px 0 5px;
+  }
+}
+
 @media (max-width: 767px) {
   body {
     background: #f6f5f0;
@@ -35374,7 +35383,7 @@ a:hover {
   padding: 15px;
   line-height: 1.4;
   background: #ffffe7;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 767px) {
@@ -35384,6 +35393,10 @@ a:hover {
     padding: 8px;
     margin-top: -13px;
   }
+}
+
+.inner-container .info-alert:first-child {
+  border-top: 0;
 }
 
 .error {
@@ -35467,7 +35480,6 @@ a:hover {
   padding: 25px;
   background: rgba(224, 224, 224, 0.3);
   border: 2px dashed #309100;
-  text-transform: uppercase;
   line-height: 1.8;
   color: #b2b2b2;
 }
